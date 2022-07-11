@@ -10,7 +10,8 @@ var isValid = function(s) {
     let chars = {')': '(', ']':'[', '}':'{'};
   //iterate through s to check if it is an open character
     for (const char of s) {
-      //if chars does not hold char as a key
+      console.log(chars[char])
+      //if chars does not hold char as a value
       if (!chars[char]) {
         //push char into stack
           stack.push(char)
